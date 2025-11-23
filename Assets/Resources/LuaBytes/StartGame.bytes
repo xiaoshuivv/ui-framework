@@ -1,0 +1,57 @@
+print("=== 游戏启动脚本 ===")
+
+function StartGame()
+    print("游戏初始化开始...")
+    
+    -- 加载游戏模块
+    require "UIBase"
+    require "UIConfig"
+    
+    -- 延迟一帧后打开登录面板
+    local co = coroutine.create(function()
+        -- 等待一帧
+        coroutine.yield()
+        print("游戏初始化开始...")
+        print("游戏初始化开始...")
+        print("游戏初始化开始...")
+        print("游戏初始化开始...")
+        print("游戏初始化开始...")
+        
+        -- 延迟调用打开登录面板
+        local success, errorMsg = pcall(function()
+            CS.UIManager.Instance:OpenPanel("LoginPanel")
+        end)
+
+        if success then
+            print("面板打开成功")
+        else
+            print("面板打开失败:", errorMsg)
+        end
+    end)
+    
+    print("游戏初始化开始...")
+    print("游戏初始化开始...")
+    print("游戏初始化开始...")
+    print("游戏初始化开始...")
+    print("游戏初始化开始...")
+    
+    -- 延迟调用打开登录面板
+    local success, errorMsg = pcall(function()
+        CS.UIManager.Instance:OpenPanel("LoginPanel")
+    end)
+
+    if success then
+        print("面板打开成功")
+    else
+        print("面板打开失败:", errorMsg)
+    end
+    
+    -- 启动协程
+    coroutine.resume(co)
+    print("游戏初始化完成...")
+end
+
+-- 调用启动函数
+StartGame()
+
+return StartGame
