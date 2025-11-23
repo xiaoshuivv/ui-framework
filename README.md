@@ -4,7 +4,7 @@ Unity XLua C# ui-framework
 该UI框架实现了完整的界面生命周期管理和层级控制功能。
 
 **框架核心功能特点：**
-- **完整的生命周期管理**：包含OnOpen、OnShow、OnClose、OnHidey等完整的界面生命周期方法
+- **完整的生命周期管理**：包含OnOpen、OnShow、OnClose、OnHide等完整的界面生命周期方法
 - **UI组件绑定**：通过AddClickListener方法绑定Button组件的点击事件
 - **配置化UI管理**：通过UIConfig.lua统一管理所有UI界面的路径和配置
 - **栈式UI管理**：支持返回操作和界面堆栈管理
